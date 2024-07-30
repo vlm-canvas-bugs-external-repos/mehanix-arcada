@@ -30,6 +30,8 @@ export function EditorRoot() {
             resizeTo: window
         });
 
+        window.__PIXI_APP__ = app;
+
     
         app.view.oncontextmenu = (e) => {
             e.preventDefault();
